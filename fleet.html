@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Fleet | CDG Shuttle – Luxury Airport Cars & Minibuses Paris</title>
+  <meta name="description" content="Explore CDG Shuttle's premium fleet of airport transfer vehicles. Executive saloons, business vans, minivans and minibuses for all group sizes. Paris airport cars.">
+  <meta name="keywords" content="airport cars paris, airport minibus hire, private transfer vehicle paris, mercedes airport transfer, minivan CDG airport, airport taxi service fleet">
+  <meta property="og:title" content="Our Fleet – CDG Shuttle Airport Transfer Vehicles">
+  <meta property="og:url" content="https://cdg-shuttle.fr/fleet.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .fleet-detail-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--ice-mid);
+      margin-bottom: 32px;
+      transition: var(--transition);
+    }
+    .fleet-detail-card:hover { box-shadow: var(--shadow-hover); }
+    .fleet-detail-inner { display: grid; grid-template-columns: 1.2fr 1fr; }
+    .fleet-detail-inner.reverse .fleet-img-wrapper { order: 2; }
+    .fleet-detail-inner.reverse .fleet-detail-body { order: 1; }
+    .fleet-img-wrapper {
+      min-width: 0;
+      height: 100%;
+      min-height: 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%);
+    }
+    .fleet-detail-img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 292px;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      margin-top: 0;
+    }
+    .fleet-detail-body { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+    .fleet-detail-body h2 { margin-bottom: 8px; }
+    .fleet-detail-body .fleet-cat { color: var(--sky); font-size: 0.82rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 12px; line-height: 1.45; }
+    .fleet-detail-body p { margin-bottom: 20px; font-size: 0.95rem; }
+    .specs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+    .spec-item { background: var(--ice); border-radius: 8px; padding: 12px 16px; }
+    .spec-item strong { display: block; font-size: 0.78rem; color: var(--text-mid); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+    .spec-item span { color: var(--navy); font-weight: 700; font-size: 0.95rem; }
+    .fleet-includes { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+    .fleet-includes li { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--text-mid); }
+    .fleet-includes li::before { content:''; display:block; width:16px;height:16px;min-width:16px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%231A6DC0'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23E8F2FF'/%3E%3Cpath d='M6 10l3 3 5-6' stroke='%231A6DC0' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat; }
+    @media (max-width: 768px) {
+      .fleet-detail-inner { grid-template-columns: 1fr; }
+      .fleet-detail-inner.reverse .fleet-img-wrapper,
+      .fleet-detail-inner.reverse .fleet-detail-body { order: initial; }
+      .fleet-img-wrapper { min-height: 260px; padding: 20px; }
+      .fleet-detail-img { height: 100%; max-height: 220px; }
+      .fleet-detail-body { padding: 24px; }
+      .fleet-detail-body .fleet-cat { font-size: 0.78rem; letter-spacing: 1px; margin-bottom: 8px; }
+      .specs-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 520px) {
+      .fleet-detail-card { margin-bottom: 24px; }
+      .fleet-detail-body { padding: 20px; }
+      .fleet-detail-body h2 { margin-bottom: 6px; }
+      .fleet-detail-body .fleet-cat { font-size: 0.74rem; letter-spacing: 0.8px; }
+      .fleet-detail-body p { font-size: 0.92rem; }
+      .fleet-img-wrapper { min-height: 220px; padding: 16px; }
+      .fleet-detail-img { max-height: 188px; }
+      .specs-grid { grid-template-columns: 1fr; }
+      .btn.btn-navy { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/cdg-shuttle.fr_.webp" alt="CDG Shuttle Logo" width="160" height="52" style="height:52px;width:auto;border-radius:6px;"></a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="rates.html">Our Rates</a></li><li><a href="fleet.html" class="active">Our Fleet</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta"><button class="btn btn-primary" data-book>Book Now</button></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Our Fleet</span></div>
+    <h1>Our Fleet</h1>
+    <p>A premium, fully maintained fleet of airport transfer vehicles for every group size and budget.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- VEHICLE 1: ECO -->
+    <div class="fleet-detail-card" data-reveal>
+      <div class="fleet-detail-inner">
+        <div class="fleet-img-wrapper">
+          <img class="fleet-detail-img" src="images/ECO.png" alt="Toyota RAV-4 Hybrid or similar" loading="lazy">
+        </div>        
+        <div class="fleet-detail-body">
+          <div class="fleet-cat">Toyota RAV-4 Hybrid or similar</div>
+          <h2>ECO</h2>
+          <p>Perfect for individuals, couples, or small groups travelling in style. Our executive saloons offer a smooth, quiet ride with premium leather interiors.</p>
+          <div class="specs-grid">
+            <div class="spec-item"><strong>Passengers</strong><span>1 – 3 Pax</span></div>
+            <div class="spec-item"><strong>Luggage</strong><span>2 </span></div>
+            <div class="spec-item"><strong>Baby Seat</strong><span>0</span></div>
+            <div class="spec-item"><strong>Booster seat</strong><span>1</span></div>
+          </div>
+          
+          <button class="btn btn-navy" data-book>Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- VEHICLE 2: VAN -->
+    <div class="fleet-detail-card" data-reveal>
+      <div class="fleet-detail-inner reverse">
+        <div class="fleet-img-wrapper">
+          <img class="fleet-detail-img" src="images/VAN.png" alt="Business van airport transfer Paris private hire" loading="lazy" width="800" height="340">
+        </div>
+        <div class="fleet-detail-body">
+          <div class="fleet-cat">Renault Trafic 3 Small or similar</div>
+          <h2>VAN</h2>
+          <p>The ideal balance of space and comfort for small families and groups. Generous luggage space with a premium feel throughout.</p>
+          <div class="specs-grid">
+            <div class="spec-item"><strong>Passengers</strong><span>6</span></div>
+            <div class="spec-item"><strong>Luggage</strong><span>6</span></div>
+            <div class="spec-item"><strong>Baby Seat</strong><span>1</span></div>
+            <div class="spec-item"><strong>Booster seat</strong><span>1</span></div>
+          </div>
+          <button class="btn btn-navy" data-book>Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- VEHICLE 3: VAN-XL -->
+    <div class="fleet-detail-card" data-reveal>
+
+      <div class="fleet-detail-inner">
+        <div class="fleet-img-wrapper">
+          <img class="fleet-detail-img" src="images/VAN-XL.png" alt="VW Caravelle minivan airport transfer Paris group 7 passengers" loading="lazy" width="800" height="340">
+        </div>
+        <div class="fleet-detail-body">
+          <div class="fleet-cat">Renault Trafic 3 Long or similar</div>
+          <h2>VAN-XL</h2>
+          <p>Our most popular vehicle for families and small groups. The spacious minivan comfortably accommodates up to 7 passengers with ample luggage for a full holiday's worth of bags.</p>
+          <div class="specs-grid">
+            <div class="spec-item"><strong>Passengers</strong><span>8</span></div>
+            <div class="spec-item"><strong>Luggage</strong><span>8</span></div>
+  
+            <div class="spec-item"><strong>Baby Seat</strong><span>1</span></div>
+            <div class="spec-item"><strong>Booster seat</strong><span>2</span></div>
+          </div>
+          <button class="btn btn-navy" data-book>Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+</section>
+
+<section class="section" style="background:var(--gray-soft);">
+  <div class="container text-center">
+    <div class="badge" data-reveal>Fleet Standards</div>
+    <h2 class="section-title" data-reveal>Every Vehicle, Every Time</h2>
+    <div class="grid-3" style="margin-top:8px;">
+      <div class="card" data-reveal><div class="card-body text-center">
+        <img src="https://cdn-icons-png.flaticon.com/64/2920/2920349.png" alt="Fully insured vehicles airport transfer Paris" width="50" height="50" loading="lazy" style="margin:0 auto 16px;opacity:0.7;">
+        <h3>Fully Insured</h3>
+        <p>All vehicles carry comprehensive passenger insurance and third-party liability cover. Your safety is our first priority.</p>
+      </div></div>
+      <div class="card" data-reveal><div class="card-body text-center">
+        <img src="https://cdn-icons-png.flaticon.com/64/3774/3774278.png" alt="Regularly maintained clean vehicles" width="50" height="50" loading="lazy" style="margin:0 auto 16px;opacity:0.7;">
+        <h3>Regularly Serviced</h3>
+        <p>Each vehicle undergoes regular safety inspections and maintenance, ensuring a reliable, breakdown-free journey every time.</p>
+      </div></div>
+      <div class="card" data-reveal><div class="card-body text-center">
+        <img src="https://cdn-icons-png.flaticon.com/64/1048/1048953.png" alt="Spotlessly clean airport car" width="50" height="50" loading="lazy" style="margin:0 auto 16px;opacity:0.7;">
+        <h3>Spotlessly Clean</h3>
+        <p>Our vehicles are cleaned and sanitised before every journey. You'll always step into a fresh, immaculate vehicle.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section">
+  <div class="container text-center">
+    <h2>Choose Your Vehicle & Book Today</h2>
+    <p>Select the perfect vehicle for your group and get an instant fixed price.</p>
+    <button class="btn btn-outline btn-lg" data-book>Book Your Transfer</button>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="images/cdg-shuttle.fr_.webp" alt="CDG Shuttle" width="160" height="50" style="height:50px;width:auto;border-radius:6px;margin-bottom:16px;"><p>Professional private airport transfer service in Paris. Fixed prices since 2009.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="rates.html">Our Rates</a></li><li><a href="fleet.html">Our Fleet</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Fleet</h4><ul class="footer-links"><li><a href="fleet.html">Executive Saloon</a></li><li><a href="fleet.html">Business Van</a></li><li><a href="fleet.html">Minivan</a></li><li><a href="fleet.html">Minibus</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><img src="https://cdn-icons-png.flaticon.com/24/5585/5585856.png" alt="" width="18" height="18" style="filter:brightness(0) invert(1);opacity:0.6;"><span>+33 (0)1 43 32 70 81</span></div><div class="footer-contact-item"><img src="https://cdn-icons-png.flaticon.com/24/5585/5585856.png" alt="" width="18" height="18" style="filter:brightness(0) invert(1);opacity:0.6;"><span>+33 6 09 71 35 76</span></div><div class="footer-contact-item"><img src="https://cdn-icons-png.flaticon.com/24/561/561127.png" alt="" width="18" height="18" style="filter:brightness(0) invert(1);opacity:0.6;"><span>contact@groupbluevanparis.com</span></div></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 CDG Shuttle — cdg-shuttle.fr. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="bookingModal">
+  <div class="modal"><div class="modal-header"><h2>Book Your Airport Transfer</h2><button class="modal-close">✕</button></div>
+  <div class="modal-body"><div class="modal-grid">
+    <div class="form-group"><label>Pickup Location</label><select class="form-control" id="bookPickup"><option value="">— Select pickup —</option><option value="cdg">Charles de Gaulle (CDG)</option><option value="orly">Orly Airport (ORY)</option><option value="beauvais">Beauvais Airport</option><option value="paris">Paris City Centre</option><option value="disney">Disneyland Paris</option><option value="versailles">Versailles</option></select></div>
+    <div class="form-group"><label>Drop-off Location</label><select class="form-control" id="bookDropoff"><option value="">— Select drop-off —</option><option value="cdg">Charles de Gaulle (CDG)</option><option value="orly">Orly Airport (ORY)</option><option value="paris">Paris City Centre</option><option value="disney">Disneyland Paris</option><option value="versailles">Versailles</option><option value="london">London</option></select></div>
+    <div class="form-group"><label>Pickup Date</label><input type="date" class="form-control" id="bookDate"></div>
+    <div class="form-group"><label>Pickup Time</label><input type="time" class="form-control" id="bookTime"></div>
+    <div class="form-group"><label>Passengers</label><select class="form-control" id="bookPax"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option></select></div>
+    <div class="form-group"><label>Vehicle</label><select class="form-control" id="bookVehicle"><option value="sedan">Executive Saloon (1–3 pax)</option><option value="van">Business Van (1–5 pax)</option><option value="minivan">Minivan (1–7 pax)</option><option value="minibus">Minibus (8–16 pax)</option></select></div>
+    <div class="form-group modal-full"><label>Full Name</label><input type="text" class="form-control" id="bookName" placeholder="Your full name"></div>
+    <div class="form-group"><label>Email</label><input type="email" class="form-control" id="bookEmail" placeholder="your@email.com"></div>
+    <div class="form-group"><label>Phone</label><input type="tel" class="form-control" id="bookPhone" placeholder="+33 ..."></div>
+    <div class="form-group modal-full"><label>Special Requirements</label><textarea class="form-control" id="bookNotes" rows="2"></textarea></div>
+  </div>
+  <button class="check-price-btn" id="checkPriceBtn">Check Price &amp; Availability</button>
+  <div class="price-result" id="priceResult"></div>
+  </div></div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
