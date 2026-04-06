@@ -265,8 +265,8 @@
             <option value="paris">Paris City (7500 to 75020)</option>
             <option value="disney">Disneyland </option>
           </select></div>
-    <div class="form-group"><label>Pickup Date</label><input type="date" class="form-control" id="bookDate"></div>
-    <div class="form-group"><label>Pickup Time</label><input type="time" class="form-control" id="bookTime" step="300"></div>
+    <div class="form-group"><label>Pickup Date</label><input type="text" class="form-control" id="bookDate" placeholder="MM/DD/YYYY" inputmode="numeric" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'"></div>
+    <div class="form-group"><label>Pickup Time</label><input type="text" class="form-control" id="bookTime" placeholder="HH:MM AM" inputmode="numeric" step="300" onfocus="this.type='time'" onblur="if(!this.value)this.type='text'"></div>
     <div class="form-group"><label>Passengers</label><select class="form-control" id="bookPax"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option></select></div>
     <div class="form-group"><label>Vehicle</label><select class="form-control" id="bookVehicle">
             <option value="Toyota RAV-4 Hybrid or similar">ECO</option>
