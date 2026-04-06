@@ -814,6 +814,17 @@ footer {
   .grid-3 { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
   .contact-wrap { grid-template-columns: 1fr; }
+  .modal-overlay {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 12px;
+  }
+  .modal {
+    max-height: calc(100dvh - 24px);
+    margin: auto 0;
+    border-radius: 16px;
+    -webkit-overflow-scrolling: touch;
+  }
   .modal-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
@@ -826,8 +837,23 @@ footer {
   .rates-intro { padding: 28px; }
   .contact-info { padding: 28px; }
   .contact-form-wrap { padding: 28px; }
-  .modal-body { padding: 24px; }
-  .modal-header { padding: 20px 24px; }
+  .modal-overlay { padding: 8px; }
+  .modal {
+    max-height: calc(100dvh - 16px);
+    border-radius: 14px;
+  }
+  .modal-body { padding: 20px; }
+  .modal-header {
+    padding: 18px 20px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+  .modal-header h2 { font-size: 1.15rem; }
+  .modal-close {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
 }
 
 /* ── ANIMATIONS ── */
