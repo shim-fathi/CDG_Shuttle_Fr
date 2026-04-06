@@ -810,6 +810,7 @@ footer {
   .nav-cta .btn { width: 100%; justify-content: center; }
   .hero { min-height: 100svh; padding-top: 56px; }
   .hero-content { padding-top: 32px; }
+  .page-hero { padding: 108px 0 56px; }
   .hero-stats { gap: 24px; }
   .about-split { grid-template-columns: 1fr; }
   .about-img-wrap img { height: 300px; }
@@ -838,6 +839,7 @@ footer {
   .btn-lg { width: 100%; justify-content: center; }
   .hero { padding-top: 48px; }
   .hero-content { padding-top: 20px; }
+  .page-hero { padding: 96px 0 44px; }
   .rates-intro { padding: 28px; }
   .contact-info { padding: 28px; }
   .contact-form-wrap { padding: 28px; }
