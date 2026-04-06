@@ -815,14 +815,14 @@ footer {
   .grid-2 { grid-template-columns: 1fr; }
   .contact-wrap { grid-template-columns: 1fr; }
   .modal-overlay {
-    align-items: flex-start;
+    align-items: center;
     overflow-y: auto;
-    padding: 12px;
+    padding: 10px;
   }
   .modal {
-    max-height: calc(100dvh - 24px);
-    margin: auto 0;
-    border-radius: 16px;
+    max-height: calc(100dvh - 20px);
+    margin: auto;
+    border-radius: 14px;
     -webkit-overflow-scrolling: touch;
   }
   .modal-grid { grid-template-columns: 1fr; }
@@ -837,16 +837,19 @@ footer {
   .rates-intro { padding: 28px; }
   .contact-info { padding: 28px; }
   .contact-form-wrap { padding: 28px; }
-  .modal-overlay { padding: 8px; }
-  .modal {
-    max-height: calc(100dvh - 16px);
-    border-radius: 14px;
+  .modal-overlay {
+    align-items: center;
+    padding: 6px;
   }
-  .modal-body { padding: 20px; }
+  .modal {
+    max-height: calc(100dvh - 12px);
+    border-radius: 12px;
+  }
+  .modal-body { padding: 16px; }
   .modal-header {
-    padding: 18px 20px;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    padding: 14px 16px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
   .modal-header h2 { font-size: 1.15rem; }
   .modal-close {
