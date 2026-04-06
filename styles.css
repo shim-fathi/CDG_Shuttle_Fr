@@ -809,11 +809,12 @@ footer {
   .nav-cta { margin-left: 0; margin-top: 8px; }
   .nav-cta .btn { width: 100%; justify-content: center; }
   .hero {
-    min-height: 100svh;
+    min-height: auto;
     align-items: flex-start;
-    padding-top: 60px;
+    padding-top: 88px;
+    padding-bottom: 40px;
   }
-  .hero-content { padding-top: 18px; }
+  .hero-content { padding-top: 20px; }
   .page-hero { padding: 96px 0 56px; }
   .hero-stats { gap: 24px; }
   .about-split { grid-template-columns: 1fr; }
@@ -843,9 +844,10 @@ footer {
   .btn-lg { width: 100%; justify-content: center; }
   .hero {
     align-items: flex-start;
-    padding-top: 54px;
+    padding-top: 76px;
+    padding-bottom: 32px;
   }
-  .hero-content { padding-top: 12px; }
+  .hero-content { padding-top: 16px; }
   .page-hero { padding: 88px 0 44px; }
   .rates-intro { padding: 28px; }
   .contact-info { padding: 28px; }
