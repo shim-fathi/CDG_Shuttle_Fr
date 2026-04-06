@@ -598,6 +598,12 @@ img { max-width: 100%; display: block; }
   border-color: var(--sky);
   box-shadow: 0 0 0 4px rgba(26,109,192,0.1);
 }
+.form-hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--text-mid);
+}
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 textarea.form-control { resize: vertical; min-height: 120px; }
 select.form-control { cursor: pointer; }
