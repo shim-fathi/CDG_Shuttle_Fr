@@ -238,6 +238,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   z-index: 2;
   max-width: 720px;
+  padding-top: 80px;
 }
 .hero-badge {
   display: inline-flex;
@@ -807,7 +808,8 @@ footer {
   .nav-menu a { display: block; padding: 12px 18px; }
   .nav-cta { margin-left: 0; margin-top: 8px; }
   .nav-cta .btn { width: 100%; justify-content: center; }
-  .hero { min-height: 100svh; padding-top: 80px; }
+  .hero { min-height: 100svh; padding-top: 56px; }
+  .hero-content { padding-top: 32px; }
   .hero-stats { gap: 24px; }
   .about-split { grid-template-columns: 1fr; }
   .about-img-wrap img { height: 300px; }
@@ -834,6 +836,8 @@ footer {
 @media (max-width: 480px) {
   .hero-btns { flex-direction: column; }
   .btn-lg { width: 100%; justify-content: center; }
+  .hero { padding-top: 48px; }
+  .hero-content { padding-top: 20px; }
   .rates-intro { padding: 28px; }
   .contact-info { padding: 28px; }
   .contact-form-wrap { padding: 28px; }
