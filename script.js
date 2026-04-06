@@ -104,9 +104,12 @@ const priceResult = document.getElementById('priceResult');
 
 const rates = {
   'sedan': { base: 65, perKm: 1.8 },
+  'Toyota RAV-4 Hybrid or similar': { base: 65, perKm: 1.8 },
   'minivan': { base: 85, perKm: 2.2 },
+  'Renault Trafic 3 Long or similar': { base: 85, perKm: 2.2 },
   'minibus': { base: 120, perKm: 2.8 },
-  'van': { base: 95, perKm: 2.4 }
+  'van': { base: 95, perKm: 2.4 },
+  'Renault Trafic 3 Small or similar': { base: 95, perKm: 2.4 }
 };
 
 const distances = {

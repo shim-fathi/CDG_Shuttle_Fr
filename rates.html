@@ -467,46 +467,20 @@
       <h2 id="modal-title">✈ Book Your Airport Transfer</h2>
       <button class="modal-close" aria-label="Close">✕</button>
     </div>
-    <div class="modal-body">
-      <form id="bookingForm" novalidate>
-        <div class="form-row">
-          <div class="form-group"><label for="pickup">Pickup Location *</label><input type="text" id="pickup" name="pickup" class="form-control" placeholder="e.g. CDG Terminal 2E" required /></div>
-          <div class="form-group"><label for="dropoff">Drop-off Location *</label><input type="text" id="dropoff" name="dropoff" class="form-control" placeholder="e.g. Paris 8th, Hotel..." required /></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label for="date">Date *</label><input type="date" id="date" name="date" class="form-control" required /></div>
-          <div class="form-group"><label for="time">Time *</label><input type="time" id="time" name="time" class="form-control" required /></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="passengers">Passengers *</label>
-            <select id="passengers" name="passengers" class="form-control" required>
-              <option value="">Select passengers</option>
-              <option>1</option><option>2</option><option>3</option>
-              <option>4</option><option>5</option><option>6</option>
-              <option>7</option><option>8</option><option>9</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="vehicle">Vehicle Type *</label>
-            <select id="vehicle" name="vehicle" class="form-control" required>
-              <option value="">Select vehicle</option>
-              <option>ECO — up to 3 passengers</option>
-              <option>VAN — up to 7 passengers</option>
-              <option>VAN-XL — up to 9 passengers</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" name="name" class="form-control" required /></div>
-          <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" name="phone" class="form-control" required /></div>
-        </div>
-        <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" class="form-control" required /></div>
-        <div class="form-group"><label for="flight">Flight Number</label><input type="text" id="flight" name="flight" class="form-control" placeholder="e.g. BA316" /></div>
-        <div class="form-group"><label for="notes">Special Requests</label><textarea id="notes" name="notes" class="form-control" placeholder="Child seats, meet &amp; greet, etc."></textarea></div>
-        <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Confirm Booking ✓</button>
-        <p style="font-size:.8rem;color:var(--gray-500);text-align:center;margin-top:.8rem">✅ Instant confirmation · 🔒 Secure booking · 📞 24/7 support</p>
-      </form>
+    <div class="modal-body"><div class="modal-grid">
+      <div class="form-group"><label>Pickup Location</label><select class="form-control" id="bookPickup"><option value="">- Select pickup -</option><option value="cdg">Charles de Gaulle Airport(CDG)</option><option value="orly">Orly Airport (ORY)</option><option value="beauvais">Beauvais Airport (BAV)</option><option value="paris">Paris City (7500 to 75020)</option><option value="disney">Disneyland </option></select></div>
+      <div class="form-group"><label>Drop-off Location</label><select class="form-control" id="bookDropoff"><option value="">- Select drop-off -</option><option value="cdg">Charles de Gaulle Airport(CDG)</option><option value="orly">Orly Airport (ORY)</option><option value="beauvais">Beauvais Airport (BAV)</option><option value="paris">Paris City (7500 to 75020)</option><option value="disney">Disneyland </option></select></div>
+      <div class="form-group"><label>Pickup Date</label><input type="date" class="form-control" id="bookDate"></div>
+      <div class="form-group"><label>Pickup Time</label><input type="time" class="form-control" id="bookTime"></div>
+      <div class="form-group"><label>Passengers</label><select class="form-control" id="bookPax"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option></select></div>
+      <div class="form-group"><label>Vehicle</label><select class="form-control" id="bookVehicle"><option value="Toyota RAV-4 Hybrid or similar">ECO</option><option value="Renault Trafic 3 Small or similar">VAN</option><option value="Renault Trafic 3 Long or similar">VAN-XL</option></select></div>
+      <div class="form-group modal-full"><label>Full Name</label><input type="text" class="form-control" id="bookName" placeholder="Your full name"></div>
+      <div class="form-group"><label>Email</label><input type="email" class="form-control" id="bookEmail" placeholder="your@email.com"></div>
+      <div class="form-group"><label>Phone</label><input type="tel" class="form-control" id="bookPhone" placeholder="+33 ..."></div>
+      <div class="form-group modal-full"><label>Special Requirements</label><textarea class="form-control" id="bookNotes" rows="2"></textarea></div>
+    </div>
+    <button class="check-price-btn" id="checkPriceBtn">Check Price &amp; Availability</button>
+    <div class="price-result" id="priceResult"></div>
     </div>
   </div>
 </div>
